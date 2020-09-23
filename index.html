@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./site/docs/css/docs.css">
+    <link rel="stylesheet" href="./globals/styles/global.css">
+    <link rel="stylesheet" href="./context/styles/context-light.css">
+    <title>Context.JS | Documentation</title>
+</head>
+<body>
+    
+    <script>
+        feather.replace()
+      </script>
+      <div class=" container">
+        <div class="header">
+          <h1>Context.JS</h1>
+          <h2>Free, customisable and stylish context menu</h2>
+        </div>
+        <div class="features">
+          <!--     <h2>Features</h2> -->
+          <div class="features-grid">
+            <div class="grid-item">
+              <h2>Customisable</h2>
+              <p>Easily customise your context menu to your needs</p>
+            </div>
+            <div class="grid-item">
+              <h2>Multiple Menus</h2>
+              <p>By just adding a few lines of JavaScript, you can have multiple menus</p>
+            </div>
+            <div class="grid-item">
+              <h2>Prebuilt Functions</h2>
+              <p>We provide many inbuilt functions you can easily add to your menu</p>
+            </div>
+            <div class="grid-item">
+              <h2>Small File Size</h2>
+              <p>No need to install 50MB of dependencies to expierence amazing menus!</p>
+            </div>
+          </div>
+          <div class="demo-grid">
+            <div class="grid-item test-item">
+              <h2>Test it out for yourself!</h2>
+              <p>Right click in this container and see what appears!</p>
+            </div>
+            <div class="grid-item test-item">
+              <h2>Test it here too!</h2>
+              <p>What a different context menu appear here!</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 2em" class="header">
+          <h1>Documentation</h1>
+          <h2>Read through the documentation to learn how to utilise the full power of Context.JS</h2>
+        </div>
+        <div class="demo-grid">
+          <div class="grid-item">
+            <h2>Basic Setup</h2>
+            <p>In order to setup Context.JS in it's most basic form, copy this HTML code.</p>
+            <code>
+              &lt;context class=&quot;context&quot;&gt; <br>
+              &lt;a class=&quot;context__link __item&quot; href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;&gt;Item One&lt;/a&gt; <br>
+              &lt;p class=&quot;context__item&quot;&gt;Item Two&lt;/p&gt; <br>
+              &lt;p class=&quot;context__expand __item&quot;&gt;Item Three&lt;/p&gt; <br>
+              &lt;linebreak&gt;&lt;/linebreak&gt; <br>
+              &lt;p class=&quot;context__link __item&quot;&gt;Item Four&lt;/p&gt; <br>
+              &lt;/context&gt;
+            </code>
+            <p>Of course, you want to have had downloaded the JavaScript file by this point. If you have successfully imported the CSS and JS files, the context menu should work for you.</p>
+          </div>
+          <div class="grid-item">
+            <h2>Some things about the menu</h2>
+            <p>This menu utlises the CSS BEM paradigm. The base class of the menu is context, with subclasses coming off of it, for example __link and __item. You are able to customise and add more of these to the either the SCSS file or the compiled CSS file. <b>Example:</b></p>
+            <pre>
+            .context {
+              /* Styles here*/
+              &__link {
+                color: red;
+              }
+            }
+          </pre>
+            <p>This will make any context item with the subclass of item to turn red. I suggest looking into BEM CSS, as it is vital to this project</p>
+          </div>
+        </div>
+      </div>
+    
+      <context class="context">
+        <a class="context__link __item" href="https://www.google.com" target="_blank">Item One</a>
+        <p class="context__item">Item Two</p>
+        <p class="context__expand __item">Item Three</p>
+        <linebreak></linebreak>
+        <p class="context__link __item">Item Four</p>
+      </context>
+
+<script src="./context/context.js"></script>
+</body>
+</html>

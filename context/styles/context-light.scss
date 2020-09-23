@@ -1,0 +1,58 @@
+// CONTEXT CSS
+
+.context {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px #ebebeb;
+  width: 150px;
+  display: none;
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+
+  &__item {
+    padding: 5px;
+    &:hover {
+      padding: 5px;
+      background: #c4c4c4;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 5px;
+    &:hover {
+      padding: 5px;
+      background: #c4c4c4;
+    }
+  }
+
+  &__expand {
+    position: relative;
+    padding: 5px;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f007";
+      width: 10px;
+      height: 10px;
+      background-size: 10px 10px;
+      text-align: right;
+      float: right;
+    }
+    &:hover {
+      padding: 5px;
+      background: #c4c4c4;
+    }
+  }
+
+  linebreak {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    opacity: 0.3;
+  }
+}
