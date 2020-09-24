@@ -58,28 +58,23 @@
           <div class="grid-item">
             <h2>Basic Setup</h2>
             <p>In order to setup Context.JS in it's most basic form, copy this HTML code.</p>
-          <script type="text/plain" class="language-html">
-<context class="context"> 
-  <a class="context__link __item" href="https://www.google.com" target="_blank">Item One</a> 
-  <p class="context__item">Item Two</p> 
-  <p class="context__expand __item">Item Three</p> 
-  <linebreak></linebreak> 
-  <p class="context__link __item">Item Four</p>   
-</context>
-          </script>
+            <pre class="language-html"><code>&lt;context class=&quot;context&quot;&gt;
+  &lt;a class=&quot;context__link __item&quot; href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;&gt;Item One&lt;/a&gt;
+  &lt;p class=&quot;context__expand __item&quot;&gt;Item Three&lt;/p&gt;
+  &lt;linebreak&gt;&lt;/linebreak&gt;
+  &lt;p class=&quot;context__link __item&quot;&gt;Item Four&lt;/p&gt;
+&lt;/context&gt;</code></pre>
             <p>Of course, you want to have had downloaded the JavaScript file by this point. If you have successfully imported the CSS and JS files, the context menu should work for you.</p>
           </div>
           <div class="grid-item">
             <h2>Some things about the menu</h2>
             <p>This menu utlises the CSS BEM paradigm. The base class of the menu is context, with subclasses coming off of it, for example __link and __item. You are able to customise and add more of these to the either the SCSS file or the compiled CSS file. <b>Example:</b></p>
-            <script type="text/plain" class="language-css">
-.context {
-  /* Styles for menu here */
+            <pre class="language-scss"><code>.context {
+  /* Styles here*/
   &__link {
     color: red;
   }
-}
-          </script>
+}</code></pre>
             <p>This will make any context item with the subclass of item to turn red. I suggest looking into BEM CSS, as it is vital to this project</p>
           </div>
         </div>
